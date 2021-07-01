@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{%block content %}
+
+{% for place in all_places %}
+<div class="jumbotron jumbotron-fluid">
+    <h3 class="display-6">{{place["name"]}}</h3>
+    <h4 class="display-8">location : {{place["location"]}}</h4>
+    <p class="lead">The type of this tourist place is {{place["type"]}}. {{place["description"]}}</p>
+    <h4 class="display-8">Expenses : {{place["expenditure"]}}</h4>
+    
+  </div>    
+    
+
+{% endfor %}
+
+{% endblock %}

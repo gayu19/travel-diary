@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+<form action="{{url_for('create_place')}}" method="post">
+    <div class="mb-3">
+      <label for="placename">Name of Place</label>
+      <textarea class="form-control" id="pname" name="name" rows="1"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="location">Location</label>
+      <textarea class="form-control" id="loc" name="location"rows="1"></textarea>
+    </div>
+  
+
+    <div class="mb-3">
+      <label for="type1">Type of Place</label>
+      <textarea class="form-control" id="type" name="type1" rows="1"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="expenditure">Expenditure</label>
+      <textarea class="form-control" id="exp" name="expenditure" rows="1"></textarea>
+    </div>
+    
+    <div class="mb-3">
+      <label for="description">Description</label>
+      <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
+{% endblock %}
